@@ -18,7 +18,6 @@ namespace CLI_Color_Converter_Csharp
             string HEX_B;
             string HEX;
             int check = 0;
-            string temp;
             check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -43,7 +42,7 @@ namespace CLI_Color_Converter_Csharp
                     HEX_R = Convert.ToString(R, 16);
                     HEX_G = Convert.ToString(G, 16);
                     HEX_B = Convert.ToString(B, 16);
-                    HEX = HEX_R + HEX_G + HEX_G;
+                    HEX = HEX_R + HEX_G + HEX_B;
                     Console.WriteLine(HEX);
 
                     break;
