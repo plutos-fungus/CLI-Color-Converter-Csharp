@@ -18,6 +18,7 @@ namespace CLI_Color_Converter_Csharp
             string HEX_B;
             string HEX;
             int check = 0;
+            string temp;
             check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -34,6 +35,17 @@ namespace CLI_Color_Converter_Csharp
                     Console.WriteLine("R: " + R);
                     Console.WriteLine("G: " + G);
                     Console.WriteLine("B: " + B);
+                    break;
+                case 2:
+                    R = Convert.ToInt32(Console.ReadLine());
+                    G = Convert.ToInt32(Console.ReadLine());
+                    B = Convert.ToInt32(Console.ReadLine());
+                    HEX_R = Convert.ToString(R, 16);
+                    HEX_G = Convert.ToString(G, 16);
+                    HEX_B = Convert.ToString(B, 16);
+                    HEX = HEX_R + HEX_G + HEX_G;
+                    Console.WriteLine(HEX);
+
                     break;
             }
         }
